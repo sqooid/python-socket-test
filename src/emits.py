@@ -19,7 +19,7 @@ def join_lobby(sio: Client, lobby_id: str):
     def join_callback(response: CallbackResult):
         print('lobby join result:',response['result'])
 
-    sio.emit('joinLobby', lobby_id, join_callback)
+    sio.emit('joinLobby', lobby_id, callback=join_callback)
 
 
 def start_game(sio: Client):
