@@ -7,7 +7,7 @@ if __name__ == '__main__':
 
     handlers.handle_socket_events(socket)
 
-    socket.connect('http://localhost:9000')
+    socket.connect('https://sqooid.ddns.net')
 
     emits.start_user(socket)
     emits.start_lobby(socket)
